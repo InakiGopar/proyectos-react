@@ -1,6 +1,6 @@
 import { useState
  } from "react";
-export function Menu( {keyStatus, handleStart} ) {
+export function Menu( {gameStart, handleStart} ) {
 
     // estado para manejar el estado del input 
     const [inputValueStart, setInputValueStart] = useState('');
@@ -18,7 +18,7 @@ export function Menu( {keyStatus, handleStart} ) {
         setInputValueStart('');
 
         if(inputValueStart.length > 0){
-            keyStatus();
+            gameStart();
         }
     }
 

@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-function Input( {handleInput, hiddenWord}) {
+function Input( {handleInput, hiddenWord, handleGameWon}) {
     //estado para manejar el estado del input 
     const [inputValue, setInputValue] = useState('');
 
@@ -16,11 +16,16 @@ function Input( {handleInput, hiddenWord}) {
         //limpio el valor del input despues de enviar
         setInputValue('');
     }
+
+    useEffect(()=>{
+        handleGameWon();
+    }, [hiddenWord, inputValue, handleGameWon]);
+
     return(
         <>
         <form onSubmit={handleSumbit}>
             <input type="text" value={inputValue} onChange={handleChange} />
-            <button>Corroborar</button>
+            <button onClick={handleGameWon}>Corroborar</button>
         </form>
         </>
     )
