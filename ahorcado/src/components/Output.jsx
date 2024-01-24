@@ -1,28 +1,29 @@
-export function Output( {hiddenWord, successes, mistakes, guessedLetters, gameWin} ) {
+export function Output( {hiddenWord, mistakes, chosenLetters, gameWin} ) {
 
-    const textGameOver = mistakes >= 6 ? 'perdiste' : ' ';
-    const textWin = gameWin ? 'ganaste' : ' ';
+    const textGameOver = mistakes >= 2 ? 'perdiste!' : ' ';
+    const textWin = gameWin ? 'ganaste!' : ' ';
 
     //esta funcion crea un nuevo arreglo donde cada letra de hiddenWord se reemplaza por si misma
     //si esta en el arreglo pasado como prop gussedLetters o por un '_' si no esta.
     const getHiddenWord = () => {
         return hiddenWord
-            .split('')
-            .map((letter) => (guessedLetters.includes(letter) ? letter : '_'))
+            .split('')  //'palabraAAdivinar => [p,a,l,a,b,r,a,A,A,d...]'
+            .map((letter) => (chosenLetters.includes(letter) ? letter : '_'))
             .join(' ');
     };
 
     return(
         <>
-        <h3>{getHiddenWord()}</h3>
-        <h3> 
-            Letras: {' '}
-            {guessedLetters + ' '}
-        </h3>
-        <h3> Aciertos: {successes}</h3>
-        <h3> Errores: {mistakes}</h3>
-        <p>{textWin}</p>
-        <p>{textGameOver}</p>
+        <section className="output">
+            <h3>{getHiddenWord()}</h3>
+            <p> 
+                Letras: {' '}
+                {chosenLetters + ' '}
+            </p>
+            <h3> <span className="mistake"> Errores: {mistakes}</span></h3>
+            <p>{textWin}</p>
+            <p>{textGameOver}</p>
+        </section>
         </>
     )
 }

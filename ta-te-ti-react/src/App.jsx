@@ -19,7 +19,7 @@ function App() {
     const turnFromStorage = window.localStorage.getItem('turn');
     return turnFromStorage ?? TURNS.X;
   });
-  const [winner, setWinner] = useState(null);  //estado para saber quin es el ganador
+  const [winner, setWinner] = useState(null);  //estado para saber quien es el ganador
 
 
 
