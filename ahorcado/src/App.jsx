@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Menu from './components/Menu';
 import Input from './components/Input';
 import Output from './components/Output';
+import { GameOver } from './components/GameOver';
 import './App.css'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
   //variables para manejar la logica de los estilos 
   const classGameStart =  startKey ? 'startDisable' : 'activeStart';
   const classGameBody  =  startKey ? 'activeGame' : 'gameDisabled';
+  const classGameOver = gameWin || mistakes > 3 ? 'game-over' : 'gameOverDisabled';
 
   //funcion para manejar el inicio del juego
   const handleStartKey = () =>{
@@ -54,10 +56,32 @@ function App() {
     }
   }
 
+  //funcion para restar el juego
+  const resetGame = ()=>{
+    //seteamos los useStates a sus estados originales
+    setStartKey(false);
+    setHiddenWord('');
+    setMistakes(0);
+    setChosenLetters([]);
+    setGameWin(false);
+  }
+
 
   return (
     <>
       <div>
+          <header className="game-header">
+                <h1>
+                    <span className="c1">A</span>
+                    <span className="c2">h</span>
+                    <span className="c3">o</span>
+                    <span className="c4">r</span>
+                    <span className="c5">c</span>
+                    <span className="c6">a</span>
+                    <span className="c7">d</span>
+                    <span className="c8">o</span>
+                </h1>
+            </header>
         <section className={classGameStart}>
           <Menu
             gameStart = {handleStartKey}
@@ -75,7 +99,13 @@ function App() {
             hiddenWord = {hiddenWord}
             mistakes = {mistakes}
             chosenLetters = {chosenLetters}
-            gameWin = {gameWin}
+          />
+        </section>
+        <section className = {classGameOver}>
+          <GameOver
+              mistakes = {mistakes}
+              gameWin = {gameWin}
+              resetGame = {resetGame}
           />
         </section>
       </div>

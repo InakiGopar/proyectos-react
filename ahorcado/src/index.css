@@ -13,32 +13,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/*estilos para el inicio del juego*/
+/*estilos para el titulo del juego*/
 
-.activeStart {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 80vh;
-}
-
-.menu {
-  display: flex;
-  flex-direction: column;
-  height: 70vh;
-  width: 40vw;
-  border: 5px solid red;
-  background-color: #302244;
-}
-
-.menu-header {
-  height: 25vh;
-}
-
-.menu-header h1 {
-  font-size: 3.5em;
-}
+.game-header h1 { font-size: 3.5em; }
 
 h1 span.c1 { color: #E53D30; }
 h1 span.c2 { color: #FCC421; }
@@ -49,15 +26,38 @@ h1 span.c6 { color: #04b89d; }
 h1 span.c7 { color: #6099b8; }
 h1 span.c8 { color: #f218e7; }
 
+/*estilos para el inicio del juego*/
+
+.activeStart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  width: 30vw;
+  border: 5px solid red;
+  background-color: #302244;
+}
+
 .menu-form {
-  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50vh;
   font-size: 1.5em;
+  padding: 3%;
 }
 
 .menu-form input {
   font-size: 1em;
   text-align: center;
-  margin-right: 0.5em;
+  margin-bottom: 2em;
+  font-family:fantasy;
 }
 
 .menu-form button {
@@ -69,13 +69,9 @@ h1 span.c8 { color: #f218e7; }
   border-image-slice: 1;
 }
 
-
-.menu-footer {
-  height: 10vh;
-}
+.menu-footer { height: 10vh; }
 
 .startDisable { display: none; }
-
 
 /*estilos para el juego*/
 
@@ -84,19 +80,24 @@ h1 span.c8 { color: #f218e7; }
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 60vh;
 }
 
-.output {
-  font-size: 2em;
+.input-game { 
+  height: 15vh;
 }
 
+.input-game form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .input-game input {
   font-size: 1.5em;
   width: 15vw;
   text-align: center;
-  margin-right: 0.5em;
+  margin-bottom: 2em;
 }
 
 .input-game button {
@@ -106,7 +107,39 @@ h1 span.c8 { color: #f218e7; }
 
 .mistake {color: #ff2111;}
 
+.output {
+  height: 30vh;
+  font-size: 2em;
+}
+
 .gameDisabled { display: none; }
 
+/*estilos para el fin del juego*/
+
+.game-over {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.text-game-over {
+  background: #111;
+  height: 300px;
+  width: 320px;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.gameOverDisabled { display: none; }
 
 
