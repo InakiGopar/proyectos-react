@@ -4,10 +4,10 @@ export function Menu( {gameStart, handleStart} ) {
     // estado para manejar el estado del input 
     const [inputValueStart, setInputValueStart] = useState('');
 
+
     //funcion para capturar el valor del input
     const handleInputValue = (value)=> {
-        console.log(value);
-        setInputValueStart(value.target.value)
+        setInputValueStart(value.target.value);
     }
 
     //funcion para manejar el inicio del juego

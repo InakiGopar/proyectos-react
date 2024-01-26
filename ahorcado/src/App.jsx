@@ -16,7 +16,7 @@ function App() {
   //variables para manejar la logica de los estilos 
   const classGameStart =  startKey ? 'startDisable' : 'activeStart';
   const classGameBody  =  startKey ? 'activeGame' : 'gameDisabled';
-  const classGameOver = gameWin || mistakes > 3 ? 'game-over' : 'gameOverDisabled';
+  const classGameOver = gameWin || mistakes == 3 ? 'game-over' : 'gameOverDisabled';
 
   //funcion para manejar el inicio del juego
   const handleStartKey = () =>{
@@ -69,7 +69,7 @@ function App() {
 
   return (
     <>
-      <div>
+      <main>
           <header className="game-header">
                 <h1>
                     <span className="c1">A</span>
@@ -108,7 +108,7 @@ function App() {
               resetGame = {resetGame}
           />
         </section>
-      </div>
+      </main>
     </>
   )
 }
