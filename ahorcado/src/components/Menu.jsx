@@ -4,10 +4,15 @@ export function Menu( {gameStart, handleStart} ) {
     // estado para manejar el estado del input 
     const [inputValueStart, setInputValueStart] = useState('');
 
-
+    //funcion para manjear espacios entre palabras 
+    const handleSpaces = (word) => {
+        const wordArray = Array.from(word);
+        return wordArray.map((letter)=> (letter != ' ' ? letter : '-' ));
+    }
     //funcion para capturar el valor del input
     const handleInputValue = (value)=> {
-        setInputValueStart(value.target.value);
+        const inputValue = handleSpaces(value.target.value).join('');
+        setInputValueStart(inputValue);
     }
 
     //funcion para manejar el inicio del juego
@@ -15,6 +20,7 @@ export function Menu( {gameStart, handleStart} ) {
         event.preventDefault();
 
         handleStart(inputValueStart);
+
         setInputValueStart('');
 
         if(inputValueStart.length > 0){

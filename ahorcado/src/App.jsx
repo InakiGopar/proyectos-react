@@ -103,8 +103,8 @@ function App() {
         </section>
         <section className = {classGameOver}>
           <GameOver
-              mistakes = {mistakes}
               gameWin = {gameWin}
+              hiddenWord = {hiddenWord}
               resetGame = {resetGame}
           />
         </section>
