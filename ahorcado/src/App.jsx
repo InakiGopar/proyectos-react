@@ -35,8 +35,13 @@ function App() {
     if(inputValue === ''){
       return;
     }
-      //copio el arrelo chosenLetters y le agrego la palabra escogida por el usuario
-      setChosenLetters([...chosenLetters, inputValue]);
+    //si el usuario ya eligio esa letra no se vuelve a incluir en el arreglo chosenLetters
+    if(chosenLetters.includes(inputValue)){
+      return;
+    }
+  
+    //copio el arrelo chosenLetters y le agrego la palabra escogida por el usuario
+    setChosenLetters([...chosenLetters, inputValue]);
 
     if(!hiddenWord.includes(inputValue)){
       setMistakes(mistakes + 1);

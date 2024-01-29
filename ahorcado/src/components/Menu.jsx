@@ -1,8 +1,10 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export function Menu( {gameStart, handleStart} ) {
     // estado para manejar el estado del input 
     const [inputValueStart, setInputValueStart] = useState('');
+
+    console.log('inputValueStart:' + inputValueStart);
 
     //funcion para manjear espacios entre palabras 
     const handleSpaces = (word) => {
@@ -20,12 +22,10 @@ export function Menu( {gameStart, handleStart} ) {
         event.preventDefault();
 
         handleStart(inputValueStart);
-
-        setInputValueStart('');
-
         if(inputValueStart.length > 0){
             gameStart();
         }
+        setInputValueStart('');
     }
 
 
@@ -33,7 +33,7 @@ export function Menu( {gameStart, handleStart} ) {
         <section className="menu">
             <form className="menu-form" onSubmit={handleSumbitStart}>
                 <h4>Ingrese una palabra para iniciar el juego</h4>
-                <input type="text" onChange={handleInputValue} />
+                <input  type="text" onChange={handleInputValue} value={inputValueStart} />
                 <button>A jugar!</button>
             </form>
             <footer className="menu-footer">
