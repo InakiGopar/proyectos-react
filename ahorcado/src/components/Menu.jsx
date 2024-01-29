@@ -4,8 +4,6 @@ export function Menu( {gameStart, handleStart} ) {
     // estado para manejar el estado del input 
     const [inputValueStart, setInputValueStart] = useState('');
 
-    console.log('inputValueStart:' + inputValueStart);
-
     //funcion para manjear espacios entre palabras 
     const handleSpaces = (word) => {
         const wordArray = Array.from(word);
@@ -33,7 +31,7 @@ export function Menu( {gameStart, handleStart} ) {
         <section className="menu">
             <form className="menu-form" onSubmit={handleSumbitStart}>
                 <h4>Ingrese una palabra para iniciar el juego</h4>
-                <input  type="text" onChange={handleInputValue} value={inputValueStart} />
+                <input  type="text" value={inputValueStart} onChange={handleInputValue} />
                 <button>A jugar!</button>
             </form>
             <footer className="menu-footer">

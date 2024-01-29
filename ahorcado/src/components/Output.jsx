@@ -1,7 +1,7 @@
 export function Output( {hiddenWord, mistakes, chosenLetters} ) {
 
     //esta funcion crea un nuevo arreglo donde cada letra de hiddenWord se reemplaza por si misma
-    //si esta en el arreglo pasado como prop gussedLetters o por un '_' si no esta.
+    //si esta en el arreglo pasado como prop (gussedLetters) o por un '_' si no esta.
     const getHiddenWord = () => {
         return hiddenWord
             .split('')  //'palabraAAdivinar => [p,a,l,a,b,r,a,A,A,d...]'

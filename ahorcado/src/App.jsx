@@ -19,7 +19,7 @@ function App() {
   const classGameOver = gameWin || mistakes == 3 ? 'game-over' : 'gameOverDisabled';
 
   //funcion para manejar el inicio del juego
-  const handleStartKey = () =>{
+  const handleStartKey = () => {
     setStartKey(true);
   }
 
@@ -36,14 +36,14 @@ function App() {
       return;
     }
     //si el usuario ya eligio esa letra no se vuelve a incluir en el arreglo chosenLetters
-    if(chosenLetters.includes(inputValue)){
+    if(chosenLetters.includes(inputValue)) {
       return;
     }
   
     //copio el arrelo chosenLetters y le agrego la palabra escogida por el usuario
     setChosenLetters([...chosenLetters, inputValue]);
 
-    if(!hiddenWord.includes(inputValue)){
+    if(!hiddenWord.includes(inputValue)) {
       setMistakes(mistakes + 1);
       return;
     }
@@ -51,7 +51,7 @@ function App() {
 
 
   //esta funcion tiene la logica para corroborar que el jugador gano el juego
-  const handleGameWon = () =>{
+  const handleGameWon = () => {
     const newHiddenWord = [...hiddenWord];
     const newGussedLetters = [...chosenLetters];
     //si todas las letras de la palabra a adivinar estan incluidas en las letras que coloco el usuario
@@ -62,7 +62,7 @@ function App() {
   }
 
   //funcion para restar el juego
-  const resetGame = ()=>{
+  const resetGame = ()=> {
     //seteamos los useStates a sus estados originales
     setStartKey(false);
     setHiddenWord('');
