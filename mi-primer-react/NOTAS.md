@@ -1,1 +1,0 @@
-## Un componente es una funcion que al ejecutarla te devuelve un elemento
