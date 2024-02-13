@@ -92,6 +92,19 @@
     object-fit: cover;
 }
 
+/*Skills*/
+.skills {
+    text-align: center;
+}
+
+.skills h2{
+    font-size: 3em;
+}
+
+.skills ul {
+    list-style: none;
+}
+
 /*MobileContainer*/
 
 .mobile-container {
@@ -102,7 +115,7 @@
 }
 
 .mobile-container-title {
-    font-size: 3em;
+    font-size: 2.5em;
     margin-bottom: 0.5em;
 }
 

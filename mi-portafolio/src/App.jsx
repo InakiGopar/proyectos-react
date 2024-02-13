@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import NavMobile from './components/mobile/NavMobile';
 import AboutMeMobile from './components/mobile/AboutMeMobile';
+import Skils from './components/mobile/Skills';
 
 function App() {
 
@@ -23,11 +24,10 @@ function App() {
       <header>
         {isMobile ? <NavMobile/> : <h1>Desktop</h1>}
       </header>
-      <section>
         {isMobile ? <AboutMeMobile/> : <h1>Desktop</h1>}
-      </section>
+        {isMobile ? <Skils/> : <h1>Desktop</h1>}
     </main>
   )
 }
 
-export default App
+export default App;

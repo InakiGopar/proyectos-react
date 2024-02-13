@@ -1,7 +1,7 @@
 function MobileContainer( {children, title} ) {
     return(
         <section className={'mobile-container'}>
-            {title && <h2 className='mobile-container-title'>{title}</h2>}
+            {title && <h3 className='mobile-container-title'>{title}</h3>}
             <div className='mobile-container-content'>
                 {children}
             </div>

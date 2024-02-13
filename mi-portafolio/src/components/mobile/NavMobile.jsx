@@ -36,4 +36,4 @@ function NavMobile() {
     )
 }
 
-export default NavMobile
+export default NavMobile;
