@@ -7,7 +7,7 @@ function Input( {handleInput, hiddenWord, handleGameWon} ) {
     //La funcion handleChange maneja el valor del input
     const handleChange = (value)=> {
         //condicion para manejar que el usuario ingrese solamente una letra
-        if(value.target.value.length > 1){ 
+        if(value.target.value.length > 1) { 
             return;
         }
         setInputValue(value.target.value);
@@ -30,7 +30,7 @@ function Input( {handleInput, hiddenWord, handleGameWon} ) {
         <>
         <section className="input-game">
             <form onSubmit={handleSumbit}>
-                <input type="text" value={inputValue} onChange={handleChange} />
+                <input type="text" value={inputValue} onChange={handleChange}/>
                 <button onClick={handleGameWon}>Corroborar</button>
             </form>
         </section>

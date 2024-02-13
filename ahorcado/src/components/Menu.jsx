@@ -20,7 +20,7 @@ export function Menu( {gameStart, handleStart} ) {
         event.preventDefault();
 
         handleStart(inputValueStart);
-        if(inputValueStart.length > 0){
+        if(inputValueStart.length > 0) {
             gameStart();
         }
         setInputValueStart('');
