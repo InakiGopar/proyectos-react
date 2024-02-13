@@ -13,7 +13,7 @@ function Input( {handleInput, hiddenWord, handleGameWon} ) {
         setInputValue(value.target.value);
     }
 
-    const handleSumbit = (event)=>{
+    const handleSumbit = (event)=> {
         event.preventDefault();
         //SE EJECUTA la funcion handleInput pasada como prop
         handleInput(inputValue, hiddenWord); 
@@ -22,7 +22,7 @@ function Input( {handleInput, hiddenWord, handleGameWon} ) {
     }
     //useEffect se encarga de llamar a la funcion handleGameWon despues de cada cambio en 
     //hiddenWord, inputValue o handleGameWon
-    useEffect(()=>{
+    useEffect(()=> {
         handleGameWon();
     }, [hiddenWord, inputValue, handleGameWon]);
 

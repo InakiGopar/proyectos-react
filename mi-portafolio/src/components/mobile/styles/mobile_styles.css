@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Header*/
+
+.mobile-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    background-color: #f70776;
+    display: flex;
+    padding: 2%;
+}
+
+.name {
+    width: 60vw;
+    font-size: 1em;
+    text-align: center;
+    font-weight: bolder;
+    color: #141010;
+}
+
+.toggle-button {
+    display: flex;
+    justify-content: end;
+    width: 40vw;   
+}
+
+.hamburger-icon {
+    height: 40px;
+    width: 50px;
+}
+
+.hamburger-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 3%;
+    background-color: #6e2a57;
+}
+
+.menu li {
+    list-style: none;
+    margin: 0.5em;
+    font-size: 1.5em;
+}
+
+.menu li a {
+    color: #f70776;
+    text-decoration: none;
+}
+
+.menu.open {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.menu.close {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+/*about me*/
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.my-avatar {
+    height: 150px;
+    width: 150px;
+}
+
+.my-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*MobileContainer*/
+
+.mobile-container {
+    margin: 5%;
+    padding: 5%;
+    text-align: center;
+    background-color: #f70777;
+}
+
+.mobile-container-title {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.mobile-container-content {
+    font-size: 1.2em;
+    padding: 5%;
+    background-color: #6e2a57ae;
+    color: #ff71b4;
+}
