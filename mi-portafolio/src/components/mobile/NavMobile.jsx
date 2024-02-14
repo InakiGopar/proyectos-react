@@ -25,10 +25,10 @@ function NavMobile() {
             </div> 
             <div className = "down">
             <ul className= {`menu ${menuClass}`}>
-                    <li><a href="">Sobre mi</a></li>
-                    <li><a href="">Habilidades</a></li>
-                    <li><a href="">Proyectos</a></li>
-                    <li><a href="">Contacto</a></li>
+                    <li><a href="#sobreMi" onClick={handleToggleMenu}>Sobre mi</a></li>
+                    <li><a href="#habilidades" onClick={handleToggleMenu}>Habilidades</a></li>
+                    <li><a href="#proyectos" onClick={handleToggleMenu}>Proyectos</a></li>
+                    <li><a href="#contacto" onClick={handleToggleMenu}>Contacto</a></li>
                 </ul>
             </div>
             

@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import NavMobile from './components/mobile/NavMobile';
 import AboutMeMobile from './components/mobile/AboutMeMobile';
-import Skils from './components/mobile/Skills';
+import SkillsMobile from './components/mobile/SkillsMobile';
+import ProyectsMobile from './components/mobile/ProyectsMobile';
 
 function App() {
 
@@ -25,7 +26,8 @@ function App() {
         {isMobile ? <NavMobile/> : <h1>Desktop</h1>}
       </header>
         {isMobile ? <AboutMeMobile/> : <h1>Desktop</h1>}
-        {isMobile ? <Skils/> : <h1>Desktop</h1>}
+        {isMobile ? <SkillsMobile/> : <h1>Desktop</h1>}
+        {isMobile ? <ProyectsMobile/> : <h1>Desktop</h1>}
     </main>
   )
 }

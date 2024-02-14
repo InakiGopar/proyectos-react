@@ -3,9 +3,9 @@ import './styles/mobile_styles.css';
 
 function AboutMeMobile() {
     return(
-        <section className='about-me'>
+        <section id='sobreMi' className='about-me-mobile'>
             <figure className='my-avatar'>
-                <img src="src/img/Png.png" alt="my-face" />
+                <img src="src/img/mifotoportafolio.jpeg" alt="my-face" />
             </figure>
             <MobileContainer title= 'Acerca de mi'>
                 <p>
