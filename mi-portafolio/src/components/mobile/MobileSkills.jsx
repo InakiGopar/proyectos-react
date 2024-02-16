@@ -1,6 +1,6 @@
 import MobileContainer from './MobileContainer';
 
-function SkillsMobile() {
+function MobileSkills() {
     return(
         <section id='habilidades' className='skills-mobile'>
             <h2>Habilidades</h2>
@@ -39,4 +39,4 @@ function SkillsMobile() {
     )
 }
 
-export default SkillsMobile;
+export default MobileSkills;

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './styles/mobile_styles.css';
 
 
-function NavMobile() {
+function MobileNav() {
 
     const [clickedMenu, setClickedMenu] = useState(false);
 
@@ -36,4 +36,4 @@ function NavMobile() {
     )
 }
 
-export default NavMobile;
+export default MobileNav;

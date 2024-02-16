@@ -1,7 +1,7 @@
 import MobileContainer from './MobileContainer';
 import './styles/mobile_styles.css';
 
-function AboutMeMobile() {
+function MobileAboutMe() {
     return(
         <section id='sobreMi' className='about-me-mobile'>
             <figure className='my-avatar'>
@@ -21,4 +21,4 @@ function AboutMeMobile() {
     )
 }
 
-export default AboutMeMobile;
+export default MobileAboutMe;

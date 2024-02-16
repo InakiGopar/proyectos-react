@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+h2 {
+    font-size: 3em;
+    margin-top: 1.5em;
+}
+
 /*Header*/
 .mobile-header {
     display: flex;
@@ -98,11 +103,6 @@
     text-align: center;
 }
 
-.skills-mobile h2{
-    font-size: 3em;
-    margin-top: 1.5em;
-}
-
 .skills-mobile ul {
     list-style: none;
 }
@@ -121,17 +121,16 @@
 }
 
 /*MobieProyects*/
-.proyects-mobile {
+.projects-mobile {
     text-align: center;
 }
 
-.proyects-mobile h3 {
+.projects-mobile h3 {
     font-size: 3em;
-    margin-top: 1.5em;
+    margin-top: 0.5em;
 }
 
 /*MobileContainer*/
-
 .mobile-container {
     margin: 5%;
     padding: 5%;
@@ -149,4 +148,39 @@
     padding: 5%;
     background-color: #6e2a57ae;
     color: #ff71b4;
+}
+
+/*MobileImageProject*/
+.mobile-image-project img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/*MobileButtonLink*/
+.btn-mobile {
+    margin-top: 1em;
+    height: 2.5em;
+    width: 100px;
+    padding-right: 2%;
+    padding-left: 2%;
+    background-color: #6e2a57;
+    border: rgb(0, 0, 0) 0.1rem solid;
+    border-radius: 2em;
+    border-color: #f70776;
+
+}
+
+.btn-mobile a {
+    display: flex;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #f70776;
+    padding: 2%;
+}
+
+.btn-mobile img {
+    height: 1.2em;
+    margin-left: 0.5em;
 }
