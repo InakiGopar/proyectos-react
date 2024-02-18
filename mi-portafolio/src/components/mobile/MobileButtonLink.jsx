@@ -1,4 +1,4 @@
-function MobileButtonLink({link, buttonLinkText, icon}) {
+function MobileButtonLink({link, buttonLinkText, icon,}) {
     return(
         <button className="btn-mobile">
             <a href={link} target="blank">
