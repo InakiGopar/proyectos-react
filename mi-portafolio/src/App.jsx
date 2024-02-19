@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import './App.css';
 import MobileNav from './components/mobile/MobileNav';
 import MobileAboutMe from './components/mobile/MobileAboutMe';
 import MobileSkills from './components/mobile/MobileSkills';

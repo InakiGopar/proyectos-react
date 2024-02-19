@@ -1,4 +1,4 @@
-function MobileButtonLink({link, buttonLinkText, icon,}) {
+function MobileButton({link, buttonLinkText, icon,}) {
     return(
         <button className="btn-mobile">
             <a href={link} target="blank">
@@ -9,4 +9,4 @@ function MobileButtonLink({link, buttonLinkText, icon,}) {
     )
 }
 
-export default MobileButtonLink;
+export default MobileButton;

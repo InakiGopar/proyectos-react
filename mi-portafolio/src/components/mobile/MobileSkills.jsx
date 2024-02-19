@@ -1,4 +1,4 @@
-import MobileContainer from './MobileContainer';
+import MobileContainer from './additional-components/MobileContainer';
 
 function MobileSkills() {
     return(
