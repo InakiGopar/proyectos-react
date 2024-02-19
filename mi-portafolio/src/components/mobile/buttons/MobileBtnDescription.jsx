@@ -1,3 +1,5 @@
+import './styles/MobileBtnDescription.css';
+
 function MobileBtnDescription( { seeDescription} ) {
 
     return(

@@ -1,3 +1,5 @@
+import './styles/MobileButton.css';
+
 function MobileButton({link, buttonLinkText, icon,}) {
     return(
         <button className="btn-mobile">

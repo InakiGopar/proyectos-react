@@ -1,0 +1,28 @@
+.btn-mobile {
+    height: 2.5em;
+    width: 120px;
+    margin-right: 3%;
+    padding-right: 2%;
+    padding-left: 3%;
+    background-color: var(--button-background-color);
+    border: rgb(0, 0, 0) 0.1rem solid;
+    border-radius: 2em;
+    border-color: var(--button-color);
+
+}
+
+.btn-mobile a {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--second-color);
+    padding: 2%;
+}
+
+.btn-mobile img {
+    height: 1.2em;
+    margin-left: 0.5em;
+}

@@ -1,3 +1,4 @@
+import './styles/MobileProject.css';
 import { useState } from "react";
 import MobileBtnDescription from "../buttons/MobileBtnDescription";
 import MobileButton from "../buttons/MobileButton";
@@ -12,7 +13,7 @@ function MobileProject({img, description}) {
 
     return(
         <article className="project">
-            <figure className= {'mobile-image-project'}>
+            <figure className= 'mobile-image-project'>
                 <img src={img} alt="image project" />
             </figure>
             <div className='project-button-container'>

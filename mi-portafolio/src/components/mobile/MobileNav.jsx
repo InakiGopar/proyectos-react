@@ -1,6 +1,5 @@
-import { useState } from 'react';
 import './styles/MobileNav.css';
-
+import { useState } from 'react';
 
 function MobileNav() {
 

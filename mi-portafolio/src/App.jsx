@@ -5,6 +5,7 @@ import MobileAboutMe from './components/mobile/MobileAboutMe';
 import MobileSkills from './components/mobile/MobileSkills';
 import MobileProjects from './components/mobile/MobileProjects';
 import MobileContactMe from './components/mobile/MobileContactMe';
+import MobileFooter from './components/mobile/MobileFooter';
 
 function App() {
 
@@ -24,13 +25,12 @@ function App() {
 
   return (
     <main>
-      <header>
         {isMobile ? <MobileNav/> : <h1>Desktop</h1>}
-      </header>
         {isMobile ? <MobileAboutMe/> : <h1>Desktop</h1>}
         {isMobile ? <MobileSkills/> : <h1>Desktop</h1>}
         {isMobile ? <MobileProjects/> : <h1>Desktop</h1>}
         {isMobile ? <MobileContactMe/> : <h1>Desktop</h1>}
+        {isMobile ? <MobileFooter/> : <h1>Desktop</h1>}
     </main>
   )
 }

@@ -1,4 +1,4 @@
-
+import './styles/MobileContactMe.css';
 import MobileButton from './buttons/MobileButton';
 import MobileContainer from './additional-components/MobileContainer';
 

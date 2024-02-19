@@ -1,3 +1,5 @@
+import './styles/MobileContainer.css';
+
 function MobileContainer( {children, title} ) {
     return(
         <section className={'mobile-container'}>

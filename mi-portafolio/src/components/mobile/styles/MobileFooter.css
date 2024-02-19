@@ -1,0 +1,15 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 15vh;
+    margin-top: 5em;
+    background-color: var(--second-color);
+}
+
+footer h4 {
+    font-weight: bold;
+    
+}

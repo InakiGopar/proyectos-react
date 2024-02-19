@@ -1,5 +1,8 @@
-import MobileContainer from './additional-components/MobileContainer';
 import './styles/mobile_styles.css';
+import './styles/MobileAboutMe.css';
+import AboutMeText from '../texts/AboutMeText';
+import MobileContainer from './additional-components/MobileContainer';
+import MobileButton from './buttons/MobileButton';
 
 function MobileAboutMe() {
     return(
@@ -7,15 +10,12 @@ function MobileAboutMe() {
             <figure className='my-avatar'>
                 <img src="src/img/mifotoportafolio.jpeg" alt="my-face" />
             </figure>
+            <MobileButton
+                buttonLinkText= 'Descargar Cv'
+                icon= 'src/img/cv.png'
+            />
             <MobileContainer title= 'Acerca de mi'>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis minus accusamus
-                    commodi delectus nemo ducimus perferendis cupiditate mollitia aspernatur magni voluptas,
-                    distinctio sapiente molestiae harum ad dolore blanditiis alias repellendus?
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis minus accusamus
-                    commodi delectus nemo ducimus perferendis cupiditate mollitia aspernatur magni voluptas,
-                    distinctio sapiente molestiae harum ad dolore blanditiis alias repellendus?
-                </p>
+                <AboutMeText/>
             </MobileContainer>
         </section>
     )

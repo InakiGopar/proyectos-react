@@ -1,4 +1,4 @@
-
+import './styles/MobileProjects.css';
 import MobileContainer from "./additional-components/MobileContainer";
 import MobileProject from "./additional-components/MobileProject";
 
