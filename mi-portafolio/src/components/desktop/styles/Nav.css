@@ -1,0 +1,48 @@
+.desktop-header {
+    display: flex;
+    align-items: center;
+    height: 15vh;
+    background-color: var(--second-color);
+}
+
+.desktop-name {
+    text-align: center;
+}
+
+.desktop-name h1 {
+    width: 40vw;
+    font-size: 3em;
+}
+
+.desktop-nav {
+    width: 60vw;
+}
+
+.desktop-nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.desktop-nav ul li {
+    list-style: none;
+}
+
+.desktop-link {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: var(--text-color);
+}
+
+.desktop-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--text-color);
+    transition: width .3s;
+}
+
+.desktop-link:hover::after{
+    width: 100%;
+    transition: width .3s;
+}

@@ -1,0 +1,37 @@
+.desktop-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: var(--button-background-color);
+    border: rgb(0, 0, 0) 0.2rem solid;
+    border-radius: 2em;
+    border-color: var(--button-color);
+    transition: all .35s;
+}
+
+.desktop-button:hover {
+    background-color: var(--hover-background-color);
+    border-color: var(--hover-color);
+    scale: 1.2;
+}
+
+.desktop-button a {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--second-color);
+    padding: 2%;
+}
+
+.desktop-button a:hover {
+    color: var( --hover-color);
+}
+
+.desktop-button img {
+    height: 2em;
+    margin-right: 0.5em;
+}

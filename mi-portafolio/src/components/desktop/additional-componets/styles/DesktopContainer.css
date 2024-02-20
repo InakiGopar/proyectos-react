@@ -1,0 +1,8 @@
+.desktop-container {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    padding: 3%;
+}

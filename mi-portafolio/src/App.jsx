@@ -6,6 +6,9 @@ import MobileSkills from './components/mobile/MobileSkills';
 import MobileProjects from './components/mobile/MobileProjects';
 import MobileContactMe from './components/mobile/MobileContactMe';
 import MobileFooter from './components/mobile/MobileFooter';
+import Nav from './components/desktop/Nav';
+import AboutMe from './components/desktop/AboutMe';
+import Skills from './components/desktop/Skills';
 
 function App() {
 
@@ -13,7 +16,7 @@ function App() {
 
   useEffect(()=> {
     function handleResize() {
-      setIsMobile(window.innerWidth <= 767);
+      setIsMobile(window.innerWidth <= 900);
     }
     
     window.addEventListener('resize', handleResize);
@@ -25,9 +28,9 @@ function App() {
 
   return (
     <main>
-        {isMobile ? <MobileNav/> : <h1>Desktop</h1>}
-        {isMobile ? <MobileAboutMe/> : <h1>Desktop</h1>}
-        {isMobile ? <MobileSkills/> : <h1>Desktop</h1>}
+        {isMobile ? <MobileNav/> : <Nav/>}
+        {isMobile ? <MobileAboutMe/> : <AboutMe/>}
+        {isMobile ? <MobileSkills/> : <Skills/>}
         {isMobile ? <MobileProjects/> : <h1>Desktop</h1>}
         {isMobile ? <MobileContactMe/> : <h1>Desktop</h1>}
         {isMobile ? <MobileFooter/> : <h1>Desktop</h1>}

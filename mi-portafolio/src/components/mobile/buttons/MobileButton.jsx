@@ -1,6 +1,6 @@
 import './styles/MobileButton.css';
 
-function MobileButton({link, buttonLinkText, icon,}) {
+function MobileButton({link, buttonLinkText, icon}) {
     return(
         <button className="btn-mobile">
             <a href={link} target="blank">
