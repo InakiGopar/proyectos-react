@@ -12,6 +12,7 @@ function MobileProjects() {
                 <MobileProject
                     img='src/img/ahorcado-screen.png'
                     description= 'aca va la descripcion del proyecto'
+                    projectLink='https://github.com/InakiGopar/proyectos-react/tree/main/ahorcado'
                 />
             </MobileContainer>
 
@@ -19,6 +20,7 @@ function MobileProjects() {
                 <MobileProject
                     img='src/img/the-lord-of-the-rings-page-screen.png'
                     description= 'aca va la descripcion del proyecto'
+                    projectLink='https://github.com/InakiGopar/the-lord-of-the-rings-page'
                 />
             </MobileContainer>
 
@@ -26,13 +28,15 @@ function MobileProjects() {
                 <MobileProject
                     img= 'src/img/app-fullstack-php-screen.png'
                     description= 'aca va la descripcion del proyecto'
+                    projectLink='https://github.com/InakiGopar/app-fullstack-php'
                 />
             </MobileContainer>
 
-            <MobileContainer title= 'Api restfull ExpressJs'>
+            <MobileContainer title= 'Api restfull PHP'>
                 <MobileProject
                     img='src/img/expressjs.png'
                     description= 'aca va la descripcion del proyecto'
+                    projectLink='https://github.com/InakiGopar/api-restful-php'
                 />
             </MobileContainer>
 

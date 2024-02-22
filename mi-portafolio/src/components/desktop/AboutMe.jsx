@@ -1,6 +1,6 @@
 import './styles/AboutMe.css';
 import AboutMeText from "../texts/AboutMeText";
-import DesktopButton from './buttons/DesktopButton';
+import DesktopButtonLink from './buttons/DesktopButtonLink';
 
 function AboutMe() {
     return(
@@ -11,7 +11,7 @@ function AboutMe() {
             <div className="desktop-text-about-me">
                 <AboutMeText/>
                 <div className="cv">
-                    <DesktopButton
+                    <DesktopButtonLink
                     buttonLinkText= 'Descargar Cv'
                     icon='src/img/cv.png'
                     />

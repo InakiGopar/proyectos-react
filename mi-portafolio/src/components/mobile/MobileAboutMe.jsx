@@ -2,7 +2,7 @@ import './styles/mobile_styles.css';
 import './styles/MobileAboutMe.css';
 import AboutMeText from '../texts/AboutMeText';
 import MobileContainer from './additional-components/MobileContainer';
-import MobileButton from './buttons/MobileButton';
+import MobileButtonLink from './buttons/MobileButtonLink';
 
 function MobileAboutMe() {
     return(
@@ -10,7 +10,7 @@ function MobileAboutMe() {
             <figure className='my-avatar'>
                 <img src="src/img/mifotoportafolio.jpeg" alt="my-face" />
             </figure>
-            <MobileButton
+            <MobileButtonLink
                 buttonLinkText= 'Descargar Cv'
                 icon= 'src/img/cv.png'
             />

@@ -1,5 +1,5 @@
 import './styles/MobileContactMe.css';
-import MobileButton from './buttons/MobileButton';
+import MobileButtonLink from './buttons/MobileButtonLink';
 import MobileContainer from './additional-components/MobileContainer';
 
 function MobileContactMe() {
@@ -13,12 +13,12 @@ function MobileContactMe() {
             <MobileContainer>
                 <p>tatigop09@gmail.com</p>
                 <div className='button-container'>
-                    <MobileButton
+                    <MobileButtonLink
                         link='mailto:tatigop09@gmail.com?subject=Contactame&body=Contactame'
                         buttonLinkText='Email'
                         icon='src/img/email.webp'
                     />
-                    <MobileButton
+                    <MobileButtonLink
                         link = 'https://www.linkedin.com/in/i%C3%B1aki-gopar-45644229a/'
                         buttonLinkText='Linkedin'
                         icon='src/img/linkedin.webp'

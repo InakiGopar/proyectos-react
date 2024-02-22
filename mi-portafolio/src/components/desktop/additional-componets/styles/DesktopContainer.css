@@ -1,8 +1,39 @@
 .desktop-container {
     display: flex;
-    justify-content:space-around;
+    flex-direction: column;
+    justify-content:space-evenly;
     align-items: center;
+    background-color: var(--second-color);
     margin-top: 3em;
-    margin-bottom: 3em;
-    padding: 3%;
+    margin-right: 1.5em;
+    margin-bottom: 1.5em;
+    border-radius: 6em;
+    height: 400px;
+    width: 400px;
+}
+
+.desktop-container-title {
+    font-size: 3em;
+}
+
+.desktop-container-content {
+    width:min-content;
+    font-size: 1em;
+    padding: 6%;
+    border-radius: 6em;
+    background-color: var(--third-color);
+    color: var(--second-color);
+}
+
+.desktop-container ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 20vw;
+}
+
+.desktop-container ul li {
+    font-size: 2em;
+    list-style: none;
 }

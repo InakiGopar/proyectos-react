@@ -9,6 +9,7 @@ import MobileFooter from './components/mobile/MobileFooter';
 import Nav from './components/desktop/Nav';
 import AboutMe from './components/desktop/AboutMe';
 import Skills from './components/desktop/Skills';
+import Projects from './components/desktop/Projects';
 
 function App() {
 
@@ -31,7 +32,7 @@ function App() {
         {isMobile ? <MobileNav/> : <Nav/>}
         {isMobile ? <MobileAboutMe/> : <AboutMe/>}
         {isMobile ? <MobileSkills/> : <Skills/>}
-        {isMobile ? <MobileProjects/> : <h1>Desktop</h1>}
+        {isMobile ? <MobileProjects/> : <Projects/>}
         {isMobile ? <MobileContactMe/> : <h1>Desktop</h1>}
         {isMobile ? <MobileFooter/> : <h1>Desktop</h1>}
     </main>

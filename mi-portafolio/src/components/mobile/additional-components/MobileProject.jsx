@@ -1,9 +1,9 @@
 import './styles/MobileProject.css';
 import { useState } from "react";
 import MobileBtnDescription from "../buttons/MobileBtnDescription";
-import MobileButton from "../buttons/MobileButton";
+import MobileButtonLink from "../buttons/MobileButtonLink";
 
-function MobileProject({img, description}) {
+function MobileProject({img, description, projectLink}) {
 
     const[seeDescription, setSeeDescription] = useState(false);
 
@@ -17,8 +17,8 @@ function MobileProject({img, description}) {
                 <img src={img} alt="image project" />
             </figure>
             <div className='project-button-container'>
-                <MobileButton
-                    link= 'https://github.com/InakiGopar/proyectos-react/tree/main/ahorcado'
+                <MobileButtonLink
+                    link= {projectLink}
                     buttonLinkText = 'Github'
                     icon= 'src/img/github.png'
                 />
