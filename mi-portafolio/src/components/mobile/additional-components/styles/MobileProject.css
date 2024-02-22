@@ -11,8 +11,6 @@
 
 .mobile-image-project {
     display: flex;
-    border: 3px solid var(--button-color);
-    width: 230px;
 }
 
 .mobile-image-project img {

@@ -2,7 +2,7 @@ function AboutMeText() {
     return(
         <>
         <p>
-            <span className="first-letter">H</span>ola, soy Iñaki Gopar, tengo 21 años y estoy estudiando la carrera
+            Hola, soy <span>Iñaki Gopar</span>, tengo 21 años y estoy estudiando la carrera
             de Tecnicatura Universitaria en Desarrollo de Aplicaciones Informáticas
             en la Universidad Nacional del Centro de la Provincia.
         </p>

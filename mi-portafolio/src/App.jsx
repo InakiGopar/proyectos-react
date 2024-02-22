@@ -10,6 +10,8 @@ import Nav from './components/desktop/Nav';
 import AboutMe from './components/desktop/AboutMe';
 import Skills from './components/desktop/Skills';
 import Projects from './components/desktop/Projects';
+import ContactMe from './components/desktop/ContactMe';
+import Footer from './components/desktop/Footer';
 
 function App() {
 
@@ -33,8 +35,8 @@ function App() {
         {isMobile ? <MobileAboutMe/> : <AboutMe/>}
         {isMobile ? <MobileSkills/> : <Skills/>}
         {isMobile ? <MobileProjects/> : <Projects/>}
-        {isMobile ? <MobileContactMe/> : <h1>Desktop</h1>}
-        {isMobile ? <MobileFooter/> : <h1>Desktop</h1>}
+        {isMobile ? <MobileContactMe/> : <ContactMe/> }
+        {isMobile ? <MobileFooter/> : <Footer/>}
     </main>
   )
 }

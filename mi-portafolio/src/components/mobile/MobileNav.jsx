@@ -1,4 +1,5 @@
 import './styles/MobileNav.css';
+import { HAMBURGERICON } from '../../constants/constantsSrcImg';
 import { useState } from 'react';
 
 function MobileNav() {
@@ -18,7 +19,7 @@ function MobileNav() {
                 </div>
                 <div className="toggle-button">
                     <figure className='hamburger-icon' onClick={handleToggleMenu}>
-                        <img src="src\img/hamburger-icon.png" alt="hamburger-icon" />
+                        <img src= {HAMBURGERICON} alt="hamburger-icon" />
                     </figure>
                 </div>
             </div> 

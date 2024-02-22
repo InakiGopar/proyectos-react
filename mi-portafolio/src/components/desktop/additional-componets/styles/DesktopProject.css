@@ -9,9 +9,6 @@ article{
     transition: all 0.8s ease;
 }
 
-.desktop-project-img:hover {
-    transform: translateY(-100%)
-}
 
 .desktop-project-img img {
     height: 100%;
@@ -39,4 +36,14 @@ article{
 
 article:hover .desktop-project-details {
     opacity: 1;
+}
+
+.desktop-project-details button {
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: var(--third-color);
+}
+
+.desktop-project-details button a {
+    font-size: 1.2em;
 }

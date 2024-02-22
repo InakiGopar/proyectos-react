@@ -1,4 +1,6 @@
 import './styles/Projects.css';
+import { PROJECTLINK1, PROJECTLINK2, PROJECTLINK3, PROJECTLINK4 } from '../../constants/constantsUrl';
+import { PROJECTIMG1, PROJECTIMG2, PROJECTIMG3, PROJECTIMG4 } from '../../constants/constantsSrcImg';
 import DesktopContainer from "./additional-componets/DesktopContainer";
 import DesktopProject from './additional-componets/DesktopProject';
 
@@ -10,29 +12,29 @@ function Projects() {
 
                 <DesktopContainer title= 'Ahorcado'>
                     <DesktopProject
-                        img='src/img/ahorcado-screen.png'
-                        projectLink= 'https://github.com/InakiGopar/proyectos-react/tree/main/ahorcado'
+                        img= {PROJECTIMG1}
+                        projectLink= {PROJECTLINK1}
                     />
                 </DesktopContainer>
 
                 <DesktopContainer title= 'The lord of the rings page'>
                     <DesktopProject
-                        img='src/img/the-lord-of-the-rings-page-screen.png'
-                        projectLink= 'https://github.com/InakiGopar/the-lord-of-the-rings-page'
+                        img= {PROJECTIMG2}
+                        projectLink= {PROJECTLINK2}
                     />
                 </DesktopContainer>
 
                 <DesktopContainer title= 'App full stack php'>
                     <DesktopProject
-                        img='src/img/app-fullstack-php-screen.png'
-                        projectLink='https://github.com/InakiGopar/app-fullstack-php'
+                        img= {PROJECTIMG3}
+                        projectLink= {PROJECTLINK3}
                     />
                 </DesktopContainer>
 
                 <DesktopContainer title= 'Api restful PHP'>
                     <DesktopProject
-                        img='src/img/expressjs.png'
-                        projectLink='https://github.com/InakiGopar/api-restful-php'
+                        img= {PROJECTIMG4}
+                        projectLink= {PROJECTLINK4}
                     />
                 </DesktopContainer>
 

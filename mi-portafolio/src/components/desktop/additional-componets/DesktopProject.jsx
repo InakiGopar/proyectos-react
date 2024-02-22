@@ -1,4 +1,5 @@
 import '../additional-componets/styles/DesktopProject.css'
+import { GITHUBICON } from '../../../constants/constantsSrcImg';
 import DesktopButtonLink from '../buttons/DesktopButtonLink';
 
 function DesktopProject( {img , projectLink} ) {
@@ -12,7 +13,7 @@ function DesktopProject( {img , projectLink} ) {
                 <DesktopButtonLink
                     link={projectLink}
                     buttonLinkText='Github'
-                    icon= 'src/img/github.png'
+                    icon= {GITHUBICON}
                 />
             </div>
         </article>

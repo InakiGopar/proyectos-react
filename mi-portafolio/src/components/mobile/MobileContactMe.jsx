@@ -1,4 +1,6 @@
 import './styles/MobileContactMe.css';
+import { EMAILURL, LINKEDINURL } from '../../constants/constantsUrl';
+import { EMAILICON, LINKENDINICON } from '../../constants/constantsSrcImg';
 import MobileButtonLink from './buttons/MobileButtonLink';
 import MobileContainer from './additional-components/MobileContainer';
 
@@ -14,14 +16,14 @@ function MobileContactMe() {
                 <p>tatigop09@gmail.com</p>
                 <div className='button-container'>
                     <MobileButtonLink
-                        link='mailto:tatigop09@gmail.com?subject=Contactame&body=Contactame'
+                        link= {EMAILURL}
                         buttonLinkText='Email'
-                        icon='src/img/email.webp'
+                        icon= {EMAILICON}
                     />
                     <MobileButtonLink
-                        link = 'https://www.linkedin.com/in/i%C3%B1aki-gopar-45644229a/'
+                        link = {LINKEDINURL}
                         buttonLinkText='Linkedin'
-                        icon='src/img/linkedin.webp'
+                        icon= {LINKENDINICON}
                     />
                 </div>
             </MobileContainer>

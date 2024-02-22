@@ -8,6 +8,10 @@
     margin: 5%;
 }
 
+.desktop-projects h2 {
+    font-size: 4em;
+}
+
 .projects-container {
     display: flex;
     justify-content: center;

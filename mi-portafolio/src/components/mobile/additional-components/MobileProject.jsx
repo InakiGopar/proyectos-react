@@ -1,4 +1,5 @@
 import './styles/MobileProject.css';
+import { GITHUBICON } from '../../../constants/constantsSrcImg';
 import { useState } from "react";
 import MobileBtnDescription from "../buttons/MobileBtnDescription";
 import MobileButtonLink from "../buttons/MobileButtonLink";
@@ -20,7 +21,7 @@ function MobileProject({img, description, projectLink}) {
                 <MobileButtonLink
                     link= {projectLink}
                     buttonLinkText = 'Github'
-                    icon= 'src/img/github.png'
+                    icon= {GITHUBICON}
                 />
                 <MobileBtnDescription
                     seeDescription={handleSeeDescription}

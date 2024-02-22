@@ -1,4 +1,6 @@
 import './styles/MobileProjects.css';
+import { PROJECTLINK1, PROJECTLINK2, PROJECTLINK3, PROJECTLINK4 } from '../../constants/constantsUrl';
+import { PROJECTIMG1, PROJECTIMG2, PROJECTIMG3, PROJECTIMG4 } from '../../constants/constantsSrcImg';
 import MobileContainer from "./additional-components/MobileContainer";
 import MobileProject from "./additional-components/MobileProject";
 
@@ -10,33 +12,33 @@ function MobileProjects() {
             <h2>Proyectos</h2>
             <MobileContainer title= 'Ahorcado'>
                 <MobileProject
-                    img='src/img/ahorcado-screen.png'
+                    img= {PROJECTIMG1}
                     description= 'aca va la descripcion del proyecto'
-                    projectLink='https://github.com/InakiGopar/proyectos-react/tree/main/ahorcado'
+                    projectLink= {PROJECTLINK1}
                 />
             </MobileContainer>
 
             <MobileContainer title= 'The lord of the rings page'>
                 <MobileProject
-                    img='src/img/the-lord-of-the-rings-page-screen.png'
+                    img= {PROJECTIMG2}
                     description= 'aca va la descripcion del proyecto'
-                    projectLink='https://github.com/InakiGopar/the-lord-of-the-rings-page'
+                    projectLink= {PROJECTLINK2}
                 />
             </MobileContainer>
 
             <MobileContainer title= 'App full stack php'>
                 <MobileProject
-                    img= 'src/img/app-fullstack-php-screen.png'
+                    img= {PROJECTIMG3}
                     description= 'aca va la descripcion del proyecto'
-                    projectLink='https://github.com/InakiGopar/app-fullstack-php'
+                    projectLink= {PROJECTLINK3}
                 />
             </MobileContainer>
 
             <MobileContainer title= 'Api restfull PHP'>
                 <MobileProject
-                    img='src/img/expressjs.png'
+                    img= {PROJECTIMG4}
                     description= 'aca va la descripcion del proyecto'
-                    projectLink='https://github.com/InakiGopar/api-restful-php'
+                    projectLink= {PROJECTLINK4}
                 />
             </MobileContainer>
 

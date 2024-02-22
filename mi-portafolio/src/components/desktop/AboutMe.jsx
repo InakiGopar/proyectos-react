@@ -1,4 +1,6 @@
 import './styles/AboutMe.css';
+import { CVURL } from '../../constants/constantsUrl';
+import { CVICON, MYPHOTO } from '../../constants/constantsSrcImg';
 import AboutMeText from "../texts/AboutMeText";
 import DesktopButtonLink from './buttons/DesktopButtonLink';
 
@@ -6,14 +8,15 @@ function AboutMe() {
     return(
         <section className="desktop-about-me">
             <figure className='desktop-my-avatar'>
-                <img src="src/img/mifotoportafolio.jpeg" alt="my-face" />
+                <img src= {MYPHOTO} alt="my-face" />
             </figure>
             <div className="desktop-text-about-me">
                 <AboutMeText/>
                 <div className="cv">
                     <DesktopButtonLink
+                    link= {CVURL}
                     buttonLinkText= 'Descargar Cv'
-                    icon='src/img/cv.png'
+                    icon= {CVICON}
                     />
                 </div>
             </div>
