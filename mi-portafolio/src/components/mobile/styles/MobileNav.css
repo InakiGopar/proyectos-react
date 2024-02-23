@@ -64,3 +64,17 @@
     visibility: hidden;
     transition: opacity 0.5s ease, visibility 0.5s ease;
 }
+
+
+@media screen and (min-width: 700px) {
+
+    .top h1 {
+        font-size: 2.5em;
+        text-align: start;
+    }   
+
+    .toggle-button {
+        align-items: center;
+    }
+    
+}

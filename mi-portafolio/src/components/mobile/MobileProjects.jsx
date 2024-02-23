@@ -3,6 +3,10 @@ import { PROJECTLINK1, PROJECTLINK2, PROJECTLINK3, PROJECTLINK4 } from '../../co
 import { PROJECTIMG1, PROJECTIMG2, PROJECTIMG3, PROJECTIMG4 } from '../../constants/constantsSrcImg';
 import MobileContainer from "./additional-components/MobileContainer";
 import MobileProject from "./additional-components/MobileProject";
+import ProjectDescription1 from '../texts/ProjectsDescription/ProjectDescription1';
+import ProjectDescription2 from '../texts/ProjectsDescription/ProjectDescription2';
+import ProjectDescription3 from '../texts/ProjectsDescription/ProjectDescription3';
+import ProjectDescription4 from '../texts/ProjectsDescription/ProjectDescription4';
 
 function MobileProjects() {
 
@@ -13,7 +17,7 @@ function MobileProjects() {
             <MobileContainer title= 'Ahorcado'>
                 <MobileProject
                     img= {PROJECTIMG1}
-                    description= 'aca va la descripcion del proyecto'
+                    description= {<ProjectDescription1/>}
                     projectLink= {PROJECTLINK1}
                 />
             </MobileContainer>
@@ -21,7 +25,7 @@ function MobileProjects() {
             <MobileContainer title= 'The lord of the rings page'>
                 <MobileProject
                     img= {PROJECTIMG2}
-                    description= 'aca va la descripcion del proyecto'
+                    description= {<ProjectDescription2/>}
                     projectLink= {PROJECTLINK2}
                 />
             </MobileContainer>
@@ -29,7 +33,7 @@ function MobileProjects() {
             <MobileContainer title= 'App full stack php'>
                 <MobileProject
                     img= {PROJECTIMG3}
-                    description= 'aca va la descripcion del proyecto'
+                    description= {<ProjectDescription3/>}
                     projectLink= {PROJECTLINK3}
                 />
             </MobileContainer>
@@ -37,7 +41,7 @@ function MobileProjects() {
             <MobileContainer title= 'Api restfull PHP'>
                 <MobileProject
                     img= {PROJECTIMG4}
-                    description= 'aca va la descripcion del proyecto'
+                    description= {<ProjectDescription4/>}
                     projectLink= {PROJECTLINK4}
                 />
             </MobileContainer>

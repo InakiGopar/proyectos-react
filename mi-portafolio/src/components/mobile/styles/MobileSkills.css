@@ -18,3 +18,25 @@
     height: 100%;
     object-fit: contain;
 }
+
+@media screen and (min-width: 700px) {
+
+    .skills-image {
+        height: 300px;
+        width: 350px;
+    }
+
+    .skills-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-mobile section {
+        width: 50vw;
+    }
+
+    .skills-mobile section article {
+        font-size: 1.5em;
+    }
+}

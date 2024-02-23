@@ -3,6 +3,10 @@ import { PROJECTLINK1, PROJECTLINK2, PROJECTLINK3, PROJECTLINK4 } from '../../co
 import { PROJECTIMG1, PROJECTIMG2, PROJECTIMG3, PROJECTIMG4 } from '../../constants/constantsSrcImg';
 import DesktopContainer from "./additional-componets/DesktopContainer";
 import DesktopProject from './additional-componets/DesktopProject';
+import ProjectDescription1 from '../texts/ProjectsDescription/ProjectDescription1';
+import ProjectDescription2 from '../texts/ProjectsDescription/ProjectDescription2';
+import ProjectDescription3 from '../texts/ProjectsDescription/ProjectDescription3';
+import ProjectDescription4 from '../texts/ProjectsDescription/ProjectDescription4';
 
 function Projects() {
     return(
@@ -14,6 +18,7 @@ function Projects() {
                     <DesktopProject
                         img= {PROJECTIMG1}
                         projectLink= {PROJECTLINK1}
+                        description={<ProjectDescription1/>}
                     />
                 </DesktopContainer>
 
@@ -21,6 +26,7 @@ function Projects() {
                     <DesktopProject
                         img= {PROJECTIMG2}
                         projectLink= {PROJECTLINK2}
+                        description={<ProjectDescription2/>}
                     />
                 </DesktopContainer>
 
@@ -28,6 +34,7 @@ function Projects() {
                     <DesktopProject
                         img= {PROJECTIMG3}
                         projectLink= {PROJECTLINK3}
+                        description={<ProjectDescription3/>}
                     />
                 </DesktopContainer>
 
@@ -35,6 +42,7 @@ function Projects() {
                     <DesktopProject
                         img= {PROJECTIMG4}
                         projectLink= {PROJECTLINK4}
+                        description={<ProjectDescription4/>}
                     />
                 </DesktopContainer>
 

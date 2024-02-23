@@ -43,5 +43,18 @@
 }
 
 .about-me-mobile .mobile-container p span {
-    font-size: 1.5em;
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+@media screen and (min-width: 700px) {
+    .my-avatar {
+        height: 350px;
+        width: 350px;
+    }
+
+    .about-me-mobile button {
+        font-size: 1em;
+        margin-top: 52px;
+    }
 }

@@ -19,7 +19,7 @@ function App() {
 
   useEffect(()=> {
     function handleResize() {
-      setIsMobile(window.innerWidth <= 900);
+      setIsMobile(window.innerWidth <= 1081);
     }
     
     window.addEventListener('resize', handleResize);
