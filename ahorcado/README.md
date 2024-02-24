@@ -16,4 +16,4 @@ To run this project locally, follow these steps:
 4. Open `http://localhost:5173` in your browser.
 
 ## Deployment
-This project is deployed on GitHub Pages. You can view it [here](link-to-your-deployment).
+This project is deployed on GitHub Pages. You can view it [here](https://inakigopar.github.io/proyectos-react/).
