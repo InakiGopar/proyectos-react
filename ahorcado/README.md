@@ -13,7 +13,7 @@ To run this project locally, follow these steps:
 1. Clone this repository.
 2. Install dependencies with `npm install`.
 3. Run the development server with `npm run dev`.
-4. Open `http://localhost:3000` in your browser.
+4. Open `http://localhost:5173` in your browser.
 
 ## Deployment
 This project is deployed on GitHub Pages. You can view it [here](link-to-your-deployment).
